@@ -3,7 +3,7 @@ package lesson2;
 public class lesson2 {
     public static void main(String[] args) throws MyArraySizeException, MyArrayDataException {
         String[][] arr = {
-                {"1", "2", "3"},
+                {"1", "g", "3", "4"},
                 {"1", "2", "3", "4"},
                 {"1", "2", "3", "4"},
                 {"1", "2", "3", "4"} };
@@ -28,7 +28,7 @@ public class lesson2 {
                 }
             }
         } catch (NumberFormatException e) {
-            String msg = "arr[" + i + "][" + j + "] - not a number";
+            String msg = "arr[" + i + "][" + j + "] - not a number.";
             throw new MyArrayDataException(msg);
         }
         return sum;
